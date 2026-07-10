@@ -1,0 +1,11 @@
+USE olor_sabor;
+
+CREATE TABLE IF NOT EXISTS pagos(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_pedido INT NOT NULL,
+    metodo VARCHAR(30) NOT NULL,
+    monto DECIMAL(10,2) NOT NULL,
+    estado VARCHAR(20) NOT NULL DEFAULT 'CONFIRMADO',
+    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY(id_pedido) REFERENCES pedidos(id)
+);

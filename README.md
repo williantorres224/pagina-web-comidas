@@ -2,7 +2,24 @@
 
 Aplicación web de pedidos de comida peruana, organizada por regiones (Costa, Sierra, Selva). Proyecto full-stack construido con **Java Servlets + JDBC** en el backend y **HTML/CSS/JavaScript** en el frontend, con persistencia en **MySQL**.
 
-![Demo del proyecto](docs/demo.gif)
+## 🎬 Demo
+
+**Resumen general**
+![Resumen](docs/demo.gif)
+
+### Recorrido completo por partes
+
+**1. Inicio y navegación por región**
+![Inicio](docs/demo-1-inicio.gif)
+
+**2. Búsqueda y catálogo de platos**
+![Catálogo](docs/demo-2-catalogo.gif)
+
+**3. Selección de platos (continuación)**
+![Final del catálogo](docs/demo-3-final.gif)
+
+**4. Datos del cliente y pago**
+![Checkout y pago](docs/demo-checkout-pago.gif)
 
 ## ✨ Funcionalidades
 
@@ -74,22 +91,39 @@ olor-y-sabor/
 
 5. Despliega la carpeta `WebContent` en Tomcat y accede a `http://localhost:8080/`
 
-## 🌐 Demo en vivo
-
-👉 [Ver demo](#) *(link pendiente)*
 
 ## 📸 Capturas
 
-| Inicio | Región Costa |
+| Inicio | 
 |---|---|
-| ![Inicio](docs/screenshots/home.png) | ![Región Costa](docs/screenshots/region-costa.png) |
+| ![Inicio](docs/screenshots/home.png) |! 
+
+| Inicio costa| 
+|---|---|
+| ![Inicio](docs/screenshots/region-costa.png) |! 
+
+| Inicio sierra | 
+|---|---|
+| ![Inicio](docs/screenshots/region-sierra.png) |! 
+
+| Inicio selva | 
+|---|---|
+| ![Inicio](docs/screenshots/region-selva.png) |! 
+
+
+| Catálogo (Costa) | Catálogo (Costa, cont.) |
+|---|---|
+| ![Catálogo Selva 1](docs/screenshots/catalogo-costa.png) | ![Catálogo Selva 2](docs/screenshots/catalogo-costa2.png) |
+
+| Catálogo (Sierra) | Catálogo (Sierra, cont.) |
+|---|---|
+| ![Catálogo Selva 1](docs/screenshots/catalogo-sierra.png) | ![Catálogo Selva 2](docs/screenshots/catalogo-sierra2.png) |
 
 | Catálogo (Selva) | Catálogo (Selva, cont.) |
 |---|---|
 | ![Catálogo Selva 1](docs/screenshots/catalogo-selva.png) | ![Catálogo Selva 2](docs/screenshots/catalogo-selva2.png) |
-| ![Catálogo Selva 1](docs/screenshots/catalogo-costa.png) | ![Catálogo Selva 2](docs/screenshots/catalogo-costa2.png) |
-| ![Catálogo Selva 1](docs/screenshots/catalogo-sierra.png) | ![Catálogo Selva 2](docs/screenshots/catalogo-sierra2.png) |
+
 
 ## 👤 Autor
 
-Proyecto desarrollado por willian torres amiquero como parte de portafolio.
+Proyecto desarrollado por [ing.willian torres amiquero] como parte de portafolio.
