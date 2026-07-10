@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos del Cliente</title>
+    <link rel="stylesheet" href="../WebContent/css/cliente.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="video-fondo">
+        <source src="../WebContent/videos/videoDatos.mp4" type="video/mp4">
+    </video>
+
+ 
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>🍲 Olor y Sabor</h2>
+            <span>Sabores que cuentan historias</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="../WebContent/costa/index.html">Costa</a>
+            <a href="../WebContent/sierra/index.html">Sierra</a>
+            <a href="../WebContent/selva/index.html">Selva</a>
+        </nav>
+
+    </header>
+
+    <main class="checkout">
+
+   
+        <aside class="informacion">
+
+            <h2>Datos del Cliente</h2>
+
+            <p>
+                Complete sus datos para realizar su pedido de forma rápida y segura.
+            </p>
+
+            <div class="info-item">
+                🛡 <strong>Información segura</strong>
+                <p>Tus datos están protegidos.</p>
+            </div>
+
+            <div class="info-item">
+                📧 <strong>Confirmación por correo</strong>
+                <p>Recibirás el detalle de tu pedido.</p>
+            </div>
+
+            <div class="info-item">
+                ✔ <strong>Verificación de correo</strong>
+                <p>Solo utilizamos correos válidos.</p>
+            </div>
+
+            <div class="info-item">
+                🔒 <strong>Privacidad garantizada</strong>
+                <p>No compartimos tu información.</p>
+            </div>
+
+        </aside>
+
+        <!-- Formulario -->
+        <section class="formulario">
+
+            <h1>Completa tus datos</h1>
+
+            <form id="form-cliente" action="cliente" method="post">
+
+                <label>👤 Nombre Completo</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ej: Juan Pérez"
+                    required>
+
+                <label>📍 Dirección</label>
+
+                <input
+                    type="text"
+                    id="direccion"
+                    name="direccion"
+                    placeholder="Ej: Av. Los Maestros 123"
+                    required>
+
+                <label>📧 Correo Electrónico</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@gmail.com"
+                    required>
+
+                <small class="mensaje-correo">
+                    ✔ Te enviaremos la confirmación del pedido a este correo.
+                </small>
+
+                <label>📱 Celular</label>
+
+                <input
+                    type="text"
+                    id="celular"
+                    name="celular"
+                    maxlength="9"
+                    placeholder="987654321"
+                    required>
+
+                <button type="button" id="btn-confirmar-cliente">
+
+                    🔒 Confirmar Pedido →
+
+                </button>
+
+                <p id="mensaje-cliente"></p>
+
+            </form>
+
+        </section>
+
+        <!-- Resumen -->
+        <aside class="pedido">
+
+            <h2>🛒 Resumen del Pedido</h2>
+
+            <div id="resumen-pedido"></div>
+
+            <div class="total">
+
+                <h3>Total</h3>
+
+                <span id="precio-total">
+                    S/ 0.00
+                </span>
+
+            </div>
+
+            <div class="entrega">
+
+                ⏱ Tiempo estimado
+
+                <strong>
+                    35 - 45 minutos
+                </strong>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <div>📞 (51) 987654321</div>
+
+        <div>📍 Ica - Perú</div>
+
+        <div>🕒 8:00 AM - 10:00 PM</div>
+
+        <div>🔒 Pedido Seguro</div>
+
+    </footer>   
+
+    <script src="../WebContent/js/cliente.js"></script>
+
+</body>
+</html>

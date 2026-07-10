@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagar Pedido</title>
+    <link rel="stylesheet" href="../WebContent/css/pagos.css">
+</head>
+<body>
+ 
+    <video autoplay muted loop id="video-fondo">
+        <source src="../WebContent/videos/videoDatos.mp4" type="video/mp4">
+    </video>
+ 
+    <header class="navbar">
+ 
+        <div class="logo">
+            <h2>🍲 Olor y Sabor</h2>
+            <span>Sabores que cuentan historias</span>
+        </div>
+ 
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="../WebContent/costa/index.html">Costa</a>
+            <a href="../WebContent/sierra/index.html">Sierra</a>
+            <a href="../WebContent/selva/index.html">Selva</a>
+        </nav>
+ 
+    </header>
+ 
+    <main class="pago-contenedor">
+ 
+        <!-- Métodos de pago -->
+        <section class="metodos">
+ 
+            <h1>Método de Pago</h1>
+            <p>Selecciona cómo quieres pagar tu pedido.</p>
+ 
+            <div class="opciones-pago" id="opciones-pago">
+ 
+                <button type="button" class="opcion activa" data-metodo="tarjeta">
+                    💳
+                    <span>Tarjeta</span>
+                </button>
+ 
+                <button type="button" class="opcion" data-metodo="yape">
+                    📱
+                    <span>Yape / Plin</span>
+                </button>
+ 
+                <button type="button" class="opcion" data-metodo="efectivo">
+                    💵
+                    <span>Efectivo</span>
+                </button>
+ 
+            </div>
+ 
+            <!-- Formulario tarjeta -->
+            <form id="form-tarjeta" class="panel-metodo activo">
+ 
+                <label>🔢 Número de Tarjeta</label>
+                <input
+                    type="text"
+                    id="numero-tarjeta"
+                    placeholder="0000 0000 0000 0000"
+                    maxlength="19"
+                    required>
+ 
+                <label>🙍 Nombre en la Tarjeta</label>
+                <input
+                    type="text"
+                    id="nombre-tarjeta"
+                    placeholder="Ej: Juan Pérez"
+                    required>
+ 
+                <div class="fila">
+ 
+                    <div class="campo">
+                        <label>📅 Vencimiento</label>
+                        <input
+                            type="text"
+                            id="vencimiento-tarjeta"
+                            placeholder="MM/AA"
+                            maxlength="5"
+                            required>
+                    </div>
+ 
+                    <div class="campo">
+                        <label>🔒 CVV</label>
+                        <input
+                            type="text"
+                            id="cvv-tarjeta"
+                            placeholder="123"
+                            maxlength="3"
+                            required>
+                    </div>
+ 
+                </div>
+ 
+            </form>
+ 
+            <!-- Panel Yape / Plin -->
+            <div id="panel-yape" class="panel-metodo">
+ 
+                <div class="qr-simulado">
+                    📱
+                </div>
+ 
+                <p>
+                    Escanea el código QR desde tu app Yape o Plin
+                    y confirma el pago de <strong id="monto-yape">S/ 0.00</strong>.
+                </p>
+ 
+            </div>
+ 
+            <!-- Panel Efectivo -->
+            <div id="panel-efectivo" class="panel-metodo">
+ 
+                <div class="qr-simulado">
+                    💵
+                </div>
+ 
+                <p>
+                    Pagarás en efectivo al momento de recibir tu pedido.
+                    Ten a la mano el monto exacto de
+                    <strong id="monto-efectivo">S/ 0.00</strong>.
+                </p>
+ 
+            </div>
+ 
+            <button type="button" id="btn-confirmar-pago" class="btn-pagar">
+                🔒 Confirmar Pago →
+            </button>
+ 
+            <p id="mensaje-pago"></p>
+ 
+        </section>
+ 
+        <!-- Resumen -->
+        <aside class="pedido">
+ 
+            <h2>🛒 Resumen del Pedido</h2>
+ 
+            <div id="resumen-pedido-pago"></div>
+ 
+            <div class="total">
+                <h3>Total</h3>
+                <span id="precio-total-pago">S/ 0.00</span>
+            </div>
+ 
+            <div class="entrega">
+                ⏱ Tiempo estimado
+                <strong>35 - 45 minutos</strong>
+            </div>
+ 
+        </aside>
+ 
+    </main>
+ 
+    <footer>
+        <div>📞 (51) 987654321</div>
+        <div>📍 Ica - Perú</div>
+        <div>🕒 8:00 AM - 10:00 PM</div>
+        <div>🔒 Pedido Seguro</div>
+    </footer>
+ 
+    <script src="../WebContent/js/pagos.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,86 @@
+#resultados-busqueda{
+    max-width: 900px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+.resultados-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.resultado-card{
+    background: rgba(255,255,255,.95);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.3);
+    transition: .25s;
+}
+
+.resultado-card:hover{
+    transform: translateY(-4px);
+}
+
+.resultado-card img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+}
+
+.resultado-info{
+    padding: 15px;
+}
+
+.resultado-info h3{
+    margin: 0 0 8px;
+    color: #8b0000;
+    font-size: 17px;
+}
+
+.resultado-precio{
+    font-weight: bold;
+    color: #b71c1c;
+    margin: 0 0 12px;
+}
+
+.resultado-controles{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.resultado-cantidad{
+    width: 55px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.resultado-agregar{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #a31717, #d52b1e);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.resultado-agregar:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(192,57,43,.5);
+}
+
+.buscando,
+.sin-resultados{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
