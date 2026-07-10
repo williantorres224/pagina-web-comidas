@@ -2,24 +2,19 @@
 
 Aplicación web de pedidos de comida peruana, organizada por regiones (Costa, Sierra, Selva). Proyecto full-stack construido con **Java Servlets + JDBC** en el backend y **HTML/CSS/JavaScript** en el frontend, con persistencia en **MySQL**.
 
-## 🎬 Demo
 
-**Resumen general**
-![Resumen](docs/demo.gif)
-
-### Recorrido completo por partes
+### Recorrido completo completo
 
 **1. Inicio y navegación por región**
 ![Inicio](docs/demo-1-inicio.gif)
 
-**2. Búsqueda y catálogo de platos**
-![Catálogo](docs/demo-2-catalogo.gif)
-
-**3. Selección de platos (continuación)**
-![Final del catálogo](docs/demo-3-final.gif)
-
-**4. Datos del cliente y pago**
+**3. Datos del cliente y la lista de pedidos**
 ![Checkout y pago](docs/demo-checkout-pago.gif)
+
+**4. Selección de tipo de pagos (continuación)**
+![Final del catálogo](docs/demo-2-final.gif)
+
+
 
 ## ✨ Funcionalidades
 
